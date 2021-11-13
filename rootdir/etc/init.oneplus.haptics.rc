@@ -31,4 +31,4 @@ on fs
 on boot
     # Reduce default vibrator gain from 0x80 to 0x55.
     # Allow gain customization via persistent property.
-    write /sys/class/leds/vibrator/gain ${persist.vendor.vib.gain:-0x55}
+    # write /sys/class/leds/vibrator/gain ${persist.vendor.vib.gain:-0x55}
