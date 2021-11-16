@@ -151,6 +151,10 @@ PRODUCT_PACKAGES += \
 # Display
 PRODUCT_PACKAGES += \
     vendor.oneplus.hardware.display@1.0.vendor
+    
+# DeviceSettings
+PRODUCT_PACKAGES += \
+    DeviceSettings
 
 # Doze
 PRODUCT_PACKAGES += \
