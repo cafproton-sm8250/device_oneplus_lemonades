@@ -70,16 +70,16 @@ void vendor_load_properties() {
     rf_version = GetProperty("ro.boot.rf_version", "");
 
     for (const auto &source : ro_props_default_source_order) {
-        set_ro_product_prop(source, "device", "OnePlus9R");
-        set_ro_product_prop(source, "name", "OnePlus9R");
-        if (rf_version == "11") {
-            /* China */
-            set_ro_product_prop(source, "model", "LE2100");
+        set_ro_product_prop(source, "device", "OnePlus8T");
+        set_ro_product_prop(source, "name", "OnePlus8T_EEA");
+        if (rf_version == "14") {
+            /* Europe */
+            set_ro_product_prop(source, "model", "KB2003");
         } else if (rf_version == "13") {
             /* India */
-            set_ro_product_prop(source, "model", "LE2101");
+            set_ro_product_prop(source, "model", "KB2003");
         }
     }
 
-    property_override("ro.build.description", "OnePlus9R-user 11   release-keys");
+    property_override("ro.build.description", "OnePlus8T-user 11   release-keys");
 }
