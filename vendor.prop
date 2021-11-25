@@ -1,6 +1,6 @@
 # Audio
 ro.config.media_vol_steps=30
-ro.config.vc_call_vol_steps=9
+
 
 # Bluetooth
 persist.bluetooth.a2dp_offload.cap=sbc-aac-aptx-aptxhd-ldac
