@@ -116,7 +116,7 @@
             android:defaultValue="3" />
     </PreferenceCategory>
 
-    <!-- <PreferenceCategory
+    <PreferenceCategory
         android:key="gestures"
         android:title="@string/screen_gestures_panel_title">
 
@@ -131,7 +131,7 @@
                     android:targetPackage="com.android.touch.gestures"
                     android:targetClass="com.android.touch.gestures.TouchscreenGestureSettings" />
         </Preference>
-    </PreferenceCategory> -->
+    </PreferenceCategory> 
 
     <PreferenceCategory
         android:key="network"

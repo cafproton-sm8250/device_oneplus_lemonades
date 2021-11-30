@@ -355,6 +355,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_BUILD_SUPER_PARTITION := false
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
+# Touch
+PRODUCT_PACKAGES += \
+    vendor.lineage.touch@1.0-service.oneplus_kona
+
 # Vendor HIDL
 PRODUCT_PACKAGES += \
     android.frameworks.automotive.display@1.0.vendor \
