@@ -94,6 +94,7 @@ USE_DEVICE_SPECIFIC_CAMERA := true
 
 # Display
 TARGET_SCREEN_DENSITY := 450
+TARGET_USES_VULKAN := true
 
 # DRM
 TARGET_ENABLE_MEDIADRM_64 := true
@@ -157,6 +158,9 @@ VENDOR_SECURITY_PATCH := 2021-09-01
 BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
 SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/private
 BOARD_VENDOR_SEPOLICY_DIRS +=  $(DEVICE_PATH)/sepolicy/dynamic
+
+include device/aosp/sepolicy/qcom/sepolicy.mk
+include device/aosp/sepolicy/common/sepolicy.mk
 
 SELINUX_IGNORE_NEVERALLOWS := true
 
